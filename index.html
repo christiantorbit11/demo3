@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OBSIDIAN — Auto Atelier | Bespoke Detailing &amp; Paint Correction</title>
+<meta name="description" content="OBSIDIAN Auto Atelier — ultra-premium mobile detailing, paint correction, and ceramic coating for exceptional automobiles. By appointment only.">
+<meta property="og:title" content="OBSIDIAN — Auto Atelier">
+<meta property="og:description" content="Bespoke Detailing &amp; Paint Correction for Exceptional Automobiles.">
+<meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/e1508f66-e0d5-428a-95bc-8bf7099e65e6.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://d2ol7oe51mr4n9.cloudfront.net">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0c'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%23c9a962' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- Grain / noise overlay -->
+<svg class="noise-svg" aria-hidden="true">
+  <filter id="grain">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"></feTurbulence>
+    <feColorMatrix type="saturate" values="0"></feColorMatrix>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#grain)"></rect>
+</svg>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-mark">OBSIDIAN</div>
+  <div class="preloader-bar"><span id="preloaderFill"></span></div>
+  <div class="preloader-pct" id="preloaderPct">0</div>
+</div>
+
+<!-- Progress rail -->
+<div class="scroll-rail" aria-hidden="true"><span id="scrollFill"></span></div>
+
+<!-- Nav -->
+<header class="site-nav" id="siteNav">
+  <a href="#top" class="nav-mark">OBSIDIAN<span>AUTO ATELIER</span></a>
+  <nav class="nav-links">
+    <a href="#atelier" data-hover>The Atelier</a>
+    <a href="#services" data-hover>Services</a>
+    <a href="#process" data-hover>Process</a>
+    <a href="#fleet" data-hover>Fleet</a>
+    <a href="#testimonials" data-hover>Testimonials</a>
+  </nav>
+  <a href="#reserve" class="nav-cta" data-hover><span>Reserve</span></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#atelier">The Atelier</a>
+  <a href="#services">Services</a>
+  <a href="#process">Process</a>
+  <a href="#fleet">Fleet</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#reserve" class="mm-cta">Reserve a Detail</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-media">
+      <video class="hero-video" autoplay muted loop playsinline
+        poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/e1508f66-e0d5-428a-95bc-8bf7099e65e6.webp">
+        <source src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/ec514f07-592f-4d80-a0e1-c3e711d9e96f.mp4" type="video/mp4">
+      </video>
+      <div class="hero-scrim"></div>
+      <div class="hero-vignette"></div>
+      <div class="hero-spotlight" id="heroSpotlight"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-line"><span>Mobile Detailing &amp; Paint Atelier — By Appointment Only</span></p>
+      <h1 class="hero-title">
+        <span class="line" data-speed="0.4">OBSIDIAN</span>
+      </h1>
+      <p class="hero-sub reveal-line"><span>Bespoke detailing &amp; paint correction for exceptional automobiles. We don't wash cars — we restore them to the moment they left the factory floor, then take them further.</span></p>
+      <div class="hero-actions">
+        <a href="#reserve" class="btn btn-solid" data-hover data-magnetic><span>Reserve a Detail</span></a>
+        <a href="#process" class="btn btn-ghost" data-hover data-magnetic><span>View the Craft</span></a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="hero-scroll-line"></span>
+      <span class="hero-scroll-text">Scroll</span>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-count="640">0</span><span class="stat-label">Vehicles Refined</span></div>
+      <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-label">Years of Craft</span></div>
+      <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label">% Mobile Service</span></div>
+      <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Star Average</span></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>PAINT CORRECTION</span><span class="dot">◆</span>
+      <span>CERAMIC COATING</span><span class="dot">◆</span>
+      <span>INTERIOR RESTORATION</span><span class="dot">◆</span>
+      <span>WHITE-GLOVE MOBILE SERVICE</span><span class="dot">◆</span>
+      <span>PAINT CORRECTION</span><span class="dot">◆</span>
+      <span>CERAMIC COATING</span><span class="dot">◆</span>
+      <span>INTERIOR RESTORATION</span><span class="dot">◆</span>
+      <span>WHITE-GLOVE MOBILE SERVICE</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- MANIFESTO / ATELIER -->
+  <section class="atelier" id="atelier">
+    <div class="section-inner">
+      <p class="eyebrow reveal-up">The Atelier</p>
+      <h2 class="manifesto reveal-up">
+        Some cars are driven. <em>Ours are restored</em> — panel by panel, reflection by reflection, until the paint remembers what it looked like under showroom light.
+      </h2>
+      <div class="atelier-grid">
+        <p class="reveal-up">Founded on a single obsession: that a vehicle's finish is not a surface, but a record — of weather, of time, of neglect. OBSIDIAN exists to reverse that record, one stage of correction at a time.</p>
+        <p class="reveal-up">Every detail is performed by hand, in your driveway or ours, using tools and compounds reserved for the world's most exacting concours restorers. Nothing is rushed. Nothing is templated.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <p class="eyebrow reveal-up">Services</p>
+      <h2 class="section-title reveal-up">The Full Ritual</h2>
+
+      <div class="service-list">
+
+        <article class="service-row" data-hover>
+          <div class="service-num">01</div>
+          <div class="service-text">
+            <h3>Paint Correction</h3>
+            <p>Multi-stage machine polishing that erases swirl marks, oxidation, and years of neglect — revealing the true depth of your paint's original color.</p>
+          </div>
+          <div class="service-media">
+            <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/5115b525-24c6-4005-9086-70d7e6f46424.webp" alt="Macro shot of paint correction polishing on black car paint" loading="lazy">
+          </div>
+        </article>
+
+        <article class="service-row" data-hover>
+          <div class="service-num">02</div>
+          <div class="service-text">
+            <h3>Ceramic Coating</h3>
+            <p>A 9H hydrophobic shield fused directly to your clear coat — engineered for a decade of gloss retention, chemical resistance, and effortless maintenance.</p>
+          </div>
+          <div class="service-media">
+            <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/c834ae92-9060-4c82-ad5d-70d150a5cd47.webp" alt="Water beading on a ceramic coated dark car hood" loading="lazy">
+          </div>
+        </article>
+
+        <article class="service-row" data-hover>
+          <div class="service-num">03</div>
+          <div class="service-text">
+            <h3>Interior Restoration</h3>
+            <p>Deep steam extraction, leather conditioning, and complete odor elimination — your cabin returned to its first day, inside and out.</p>
+          </div>
+          <div class="service-media">
+            <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/2b50e2bb-8566-43df-91a3-d06b79aa6189.webp" alt="Restored luxury car interior with ambient lighting" loading="lazy">
+          </div>
+        </article>
+
+        <article class="service-row" data-hover>
+          <div class="service-num">04</div>
+          <div class="service-text">
+            <h3>White-Glove Mobile Service</h3>
+            <p>Our atelier comes to you. A fully equipped mobile studio, generator-powered and climate-controlled, anywhere within the metro.</p>
+          </div>
+          <div class="service-media">
+            <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/8d2d80e4-33e2-4d09-a514-0fe44ba60751.webp" alt="Detailer servicing a car at a private residence at night" loading="lazy">
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="process-header section-inner">
+      <p class="eyebrow reveal-up">Process</p>
+      <h2 class="section-title reveal-up">Four Stages. No Shortcuts.</h2>
+    </div>
+
+    <div class="process-pin">
+      <div class="process-step" data-step="0">
+        <div class="process-num">01</div>
+        <div class="process-copy">
+          <h3>Consultation &amp; Inspection</h3>
+          <p>Every vehicle begins under raking light — swirls, oxidation, and prior repairs mapped by hand before a single tool touches the paint.</p>
+        </div>
+        <div class="process-img"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/c14aa0cb-a879-4907-8aec-28fe0b725160.webp" alt="Detailer inspecting car paint with a flashlight at night" loading="lazy"></div>
+      </div>
+      <div class="process-step" data-step="1">
+        <div class="process-num">02</div>
+        <div class="process-copy">
+          <h3>Decontamination Wash</h3>
+          <p>A pH-neutral foam bath lifts grime and bonded contaminants without a single microfiber touching the surface — the last step before correction begins.</p>
+        </div>
+        <div class="process-img"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/7c6e8689-b3b4-4095-a3cf-62420d92610c.webp" alt="Thick snow foam covering an exotic car" loading="lazy"></div>
+      </div>
+      <div class="process-step" data-step="2">
+        <div class="process-num">03</div>
+        <div class="process-copy">
+          <h3>Correction &amp; Refinement</h3>
+          <p>Dual-action and rotary polishers, matched compound by compound to your paint's hardness, remove defects in successive, increasingly fine stages.</p>
+        </div>
+        <div class="process-img"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/85c834d9-48ff-4cfd-903f-516bf84a9c24.webp" alt="Close up of a polisher buffing pad on black paint" loading="lazy"></div>
+      </div>
+      <div class="process-step" data-step="3">
+        <div class="process-num">04</div>
+        <div class="process-copy">
+          <h3>Seal &amp; Cure</h3>
+          <p>A ceramic topcoat is applied panel by panel and cured under controlled UV — locking in the correction for years, not weeks.</p>
+        </div>
+        <div class="process-img"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/ea2e43d0-5e4d-44e4-bc0e-3dcd7e999baa.webp" alt="Car hood curing under a violet UV lamp" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="process-progress" aria-hidden="true">
+      <span class="pp-dot" data-i="0"></span>
+      <span class="pp-dot" data-i="1"></span>
+      <span class="pp-dot" data-i="2"></span>
+      <span class="pp-dot" data-i="3"></span>
+    </div>
+  </section>
+
+  <!-- FLEET / GALLERY -->
+  <section class="fleet" id="fleet">
+    <div class="section-inner fleet-header">
+      <p class="eyebrow reveal-up">The Fleet</p>
+      <h2 class="section-title reveal-up">Recently Refined</h2>
+    </div>
+    <div class="fleet-track" id="fleetTrack">
+      <figure class="fleet-card" data-hover>
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/28cb9334-5eb7-4878-bfc8-18118796bb50.webp" alt="Matte black exotic sports car detailed by OBSIDIAN" loading="lazy">
+        <figcaption><span>Matte Noir</span><span>Full Correction + Ceramic</span></figcaption>
+      </figure>
+      <figure class="fleet-card" data-hover>
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/e5c9a263-c95c-4513-b556-2dd508b15930.webp" alt="Deep red exotic sports car detailed by OBSIDIAN" loading="lazy">
+        <figcaption><span>Rosso Profondo</span><span>Paint Correction Stage II</span></figcaption>
+      </figure>
+      <figure class="fleet-card" data-hover>
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/5316f774-59c8-40db-bc62-7e26679af3b8.webp" alt="Pearl white exotic sports car detailed by OBSIDIAN" loading="lazy">
+        <figcaption><span>Perla Bianca</span><span>Interior Restoration + Ceramic</span></figcaption>
+      </figure>
+      <figure class="fleet-card" data-hover>
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/094ab851-7af3-4fb5-a5a8-beaaf432b946.webp" alt="British racing green exotic sports car detailed by OBSIDIAN" loading="lazy">
+        <figcaption><span>Verde Inglese</span><span>Full Ritual — Mobile Service</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials-bg" style="background-image:url('https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/b38b72ca-5735-49bd-aa62-4a78a5ad992d.webp')"></div>
+    <div class="testimonials-scrim"></div>
+    <div class="section-inner">
+      <p class="eyebrow reveal-up">Testimonials</p>
+      <div class="quote-stage">
+        <blockquote class="quote active" data-i="0">
+          <p>“OBSIDIAN doesn't detail cars. They perform surgery. My collection has never looked the way it does now.”</p>
+          <cite>M. Castellan — Private Collector</cite>
+        </blockquote>
+        <blockquote class="quote" data-i="1">
+          <p>“I've had vehicles serviced by dealerships on three continents. Nothing compares to this level of patience and precision.”</p>
+          <cite>R. Whitfield — Concours Entrant</cite>
+        </blockquote>
+        <blockquote class="quote" data-i="2">
+          <p>“The mobile studio arrived like a pit crew and left like it was never there — except the car looked better than the day I bought it.”</p>
+          <cite>A. Chen — Founder, Meridian Capital</cite>
+        </blockquote>
+      </div>
+      <div class="quote-dots">
+        <button data-i="0" class="active" aria-label="Testimonial 1"></button>
+        <button data-i="1" aria-label="Testimonial 2"></button>
+        <button data-i="2" aria-label="Testimonial 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / RESERVE -->
+  <section class="cta" id="reserve">
+    <div class="cta-bg" style="background-image:url('https://d2ol7oe51mr4n9.cloudfront.net/user_3F9H1qsJYQsQN3jxdo1CRXo5vQV/f6e94db8-bc2c-4729-ae7f-477604c2e765.webp')"></div>
+    <div class="cta-scrim"></div>
+    <div class="section-inner cta-inner">
+      <p class="eyebrow reveal-up">Reserve Your Detail</p>
+      <h2 class="cta-title reveal-up">Your vehicle deserves this.</h2>
+      <p class="cta-sub reveal-up">Appointments are limited to protect the quality of every detail. Tell us about your vehicle and we'll be in touch within one business day.</p>
+      <a href="mailto:atelier@obsidian-auto.example" class="btn btn-solid btn-large" data-hover data-magnetic><span>Request an Appointment</span></a>
+      <div class="cta-meta">
+        <span>Serving the metro &amp; surrounding counties</span>
+        <span>By appointment only</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <span class="nav-mark">OBSIDIAN<span>AUTO ATELIER</span></span>
+      <p>Bespoke detailing &amp; paint correction for exceptional automobiles.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#atelier">The Atelier</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#fleet">Fleet</a>
+    </div>
+    <div class="footer-col">
+      <h4>Studio Hours</h4>
+      <p>Tue — Sat, 9:00 – 18:00</p>
+      <p>Mobile service by appointment, 7 days</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:atelier@obsidian-auto.example">atelier@obsidian-auto.example</a>
+      <a href="tel:+10000000000">+1 (000) 000-0000</a>
+    </div>
+  </div>
+  <div class="section-inner footer-bottom">
+    <span>&copy; <span id="year"></span> OBSIDIAN Auto Atelier. All rights reserved.</span>
+    <span class="footer-note">A portfolio concept piece — imagery generated with Higgsfield.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
